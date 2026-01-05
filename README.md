@@ -1,71 +1,78 @@
-# Learning NLP - Bag of Words for Spam Classification
+# Learning NLP
 
-This repository contains a Natural Language Processing (NLP) project implementing the **Bag of Words (BoW)** technique for spam message classification.
+This repository contains comprehensive Natural Language Processing (NLP) learning materials covering fundamental to advanced text processing techniques.
 
 ## 📋 Project Overview
 
-A practical implementation of spam detection using the Bag of Words approach with Multinomial Naive Bayes classifier. The project demonstrates text vectorization and classification on SMS spam dataset.
+A hands-on learning journey through essential NLP concepts, from text preprocessing basics to advanced word embeddings. Each notebook demonstrates practical implementations with real-world datasets.
 
-## 🔑 Key Features
+## 📚 Notebooks
 
-- **Text Preprocessing**: SMS message data processing and cleaning
-- **Feature Extraction**: Bag of Words implementation using CountVectorizer
-- **Binary Classification**: Spam vs. Ham (non-spam) detection
-- **Machine Learning**: Multinomial Naive Bayes classifier
-- **Model Evaluation**: Performance metrics using classification report
+### Fundamentals
+- **[NLP_Basics_Tokenization.ipynb](NLP_Basics_Tokenization.ipynb)** - Breaking text into tokens (words, sentences)
+- **[NLP_Basics_Stop_Words.ipynb](NLP_Basics_Stop_Words.ipynb)** - Removing common words for better analysis
+- **[NLP_Basics_n_Grams.ipynb](NLP_Basics_n_Grams.ipynb)** - N-gram models for sequence analysis
+- **[NLP_Basics_BOW.ipynb](NLP_Basics_BOW.ipynb)** - Bag of Words fundamentals
+- **[NLP_Basics_SCR.ipynb](NLP_Basics_SCR.ipynb)** - Stemming, lemmatization, and text cleaning
 
-## 📊 Dataset
+### Feature Extraction
+- **[Bag_of_Words.ipynb](Bag_of_Words.ipynb)** - BoW implementation for spam classification
+- **[TF_IDF.ipynb](TF_IDF.ipynb)** - Term Frequency-Inverse Document Frequency weighting
 
-The project uses the `spam.csv` dataset containing SMS messages labeled as spam or ham.
+### Advanced Topics
+- **[word2vec_(PreTrained).ipynb](word2vec_(PreTrained).ipynb)** - Word embeddings using pre-trained models
+- **[NER.ipynb](NER.ipynb)** - Named Entity Recognition
+
+## 📊 Datasets
+
+- **spam.csv** - SMS spam/ham messages for classification tasks
+- **Ecommerce_data.csv** - E-commerce data for text analysis
 
 ## 🛠️ Technologies Used
 
 - **Python 3.x**
 - **pandas** - Data manipulation and analysis
 - **numpy** - Numerical computing
-- **scikit-learn** - Machine learning library
-  - CountVectorizer for Bag of Words
-  - MultinomialNB for classification
-  - train_test_split for data splitting
-  - classification_report for evaluation
-
-## 📓 Notebook Contents
-
-The [Bag_of_Words.ipynb](Bag_of_Words.ipynb) notebook includes:
-
-1. Data loading and exploration
-2. Data preprocessing and label encoding
-3. Train-test split (80-20 ratio)
-4. Bag of Words vectorization
-5. Model training with Multinomial Naive Bayes
-6. Model evaluation with classification metrics
-7. Prediction on new messages
+- **scikit-learn** - Machine learning and text vectorization
+- **nltk/spaCy** - Natural language processing libraries
+- **gensim** - Topic modeling and word embeddings
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
 ```bash
-pip install pandas numpy scikit-learn
+pip install pandas numpy scikit-learn nltk spacy gensim
 ```
 
 ### Usage
 
 1. Clone this repository
-2. Ensure you have the `spam.csv` dataset
-3. Open and run the Jupyter notebook `Bag_of_Words.ipynb`
+2. Install required dependencies
+3. Open any Jupyter notebook to explore specific NLP concepts
+4. Follow along with the code and explanations
 
-## 📈 Model Performance
+## 💡 Learning Path
 
-The model is evaluated using precision, recall, and F1-score metrics from scikit-learn's classification report.
+**Recommended order for beginners:**
 
-## 💡 Learning Objectives
+1. Start with tokenization basics
+2. Learn about stop words and text cleaning
+3. Explore n-grams and sequence modeling
+4. Understand Bag of Words representation
+5. Master TF-IDF weighting
+6. Dive into word embeddings (word2vec)
+7. Practice with NER and classification tasks
 
-- Understanding Bag of Words representation
-- Text feature extraction and vectorization
-- Implementing Naive Bayes for text classification
-- Evaluating classification models
-- End-to-end NLP pipeline development
+## 📈 Key Concepts Covered
+
+- Text preprocessing and normalization
+- Tokenization strategies
+- Feature extraction techniques
+- Text vectorization methods
+- Word embeddings and semantic similarity
+- Classification and entity recognition
+- Model evaluation metrics
 
 ## 📝 License
 
